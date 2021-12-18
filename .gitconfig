@@ -7,3 +7,8 @@
 	name = Ryan Lalchand
 	email = 70449616+ryanlalchand@users.noreply.github.com
 
+[core]
+	editor = nano
+
+[core]
+	editor = code --wait
