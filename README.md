@@ -8,7 +8,6 @@
 xcode-select --install
 ```
 
-
 2. Clone repo into new hidden directory.
 
 ```zsh
@@ -19,7 +18,6 @@ git clone git@github.com:ryanlalchand/.dotfiles.git ~/.dotfiles
 git clone https://github.com/ryanlalchand/.dotfiles.git ~/.dotfiles
 ```
 
-
 3. Create symlinks in the Home directory to the real files in the repo.
 
 ```zsh
@@ -29,7 +27,6 @@ git clone https://github.com/ryanlalchand/.dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
-
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
 
@@ -46,13 +43,33 @@ brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```
 
+5. Setup oh-my-zsh
+
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+Drag font file into FontBook.app
+
+Create new iTerm2 profile, make it default, delete default profile
+
+Set colors to newly created itermcolors files
+
+Set font to SourceCode+PowerLine+AwesomeRegular
+
+You can always run `p10k configure` to reconfigure the theme
+
+To keep VS Code in sync with iTerm2, Update `terminal.integrated.fontFamily` setting to 'SourceCodePro+PowerLine+AwesomeRegular'
+```
 
 ## TODO List
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
 - Organize these growing steps into multiple script files.
 - Automate symlinking and run script files with a bootstrapping tool like [Dotbot](https://github.com/anishathalye/dotbot).
-- Revisit the list in [`.zshrc`](.zshrc) to customize the shell.
 - Make a checklist of steps to decommission your computer before wiping your hard drive.
 - Create a [bootable USB installer for macOS](https://support.apple.com/en-us/HT201372).
 - Integrate other cloud services into your Dotfiles process (Dropbox, Google Drive, etc.).
