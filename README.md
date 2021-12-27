@@ -65,6 +65,8 @@ You can always run `p10k configure` to reconfigure the theme
 To keep VS Code in sync with iTerm2, Update `terminal.integrated.fontFamily` setting to 'SourceCodePro+PowerLine+AwesomeRegular'
 ```
 
+5. Download [Logitech Options](https://www.logitech.com/en-us/product/options) for MX Vertical
+
 ## TODO List
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
