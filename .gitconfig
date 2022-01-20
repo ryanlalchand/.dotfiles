@@ -12,3 +12,4 @@
 
 [core]
 	editor = code --wait
+	excludesfile = /Users/ryan/.gitignore_global
