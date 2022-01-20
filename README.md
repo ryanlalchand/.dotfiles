@@ -26,6 +26,7 @@ git clone https://github.com/ryanlalchand/.dotfiles.git ~/.dotfiles
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
 ```
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
