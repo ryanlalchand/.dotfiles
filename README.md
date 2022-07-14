@@ -68,6 +68,8 @@ To keep VS Code in sync with iTerm2, Update `terminal.integrated.fontFamily` set
 
 5. Download [Logitech Options](https://www.logitech.com/en-us/product/options) for MX Vertical
 
+6. Install `nvm` via `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+
 ## TODO List
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.

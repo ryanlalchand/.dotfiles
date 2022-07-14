@@ -107,11 +107,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=/usr/local/bin:$PATH
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-eval "$(pyenv init -)"
-eval "$(rbenv init - zsh)"
-export PATH=/usr/local/mysql-8.0.27-macos11-x86_64/bin:$PATH
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=/usr/local/bin:/usr/local/lib/:$PATH
+
+eval "$(rbenv init - zsh)"
+
+export PATH=/usr/local/mysql-8.0.27-macos11-x86_64/bin:$PATH
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+    [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
