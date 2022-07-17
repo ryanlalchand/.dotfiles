@@ -28,6 +28,9 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/brew.dump.plist ~/Library/LaunchAgents/brew.dump.plist
+
+# loads my script as a launch agent to schedule
+launchctl load ~/Library/LaunchAgents/local.restart.plist
 ```
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
