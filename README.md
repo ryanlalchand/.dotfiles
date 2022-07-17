@@ -27,6 +27,7 @@ git clone https://github.com/ryanlalchand/.dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
+ln -s ~/.dotfiles/brew.dump.plist ~/Library/LaunchAgents/brew.dump.plist
 ```
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
@@ -49,9 +50,9 @@ cd ~/.dotfiles && brew bundle
 ```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+`git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
 Drag font file into FontBook.app
 
@@ -59,7 +60,7 @@ Create new iTerm2 profile, make it default, delete default profile
 
 Set colors to newly created itermcolors files
 
-Set font to SourceCode+PowerLine+AwesomeRegular
+Set font to `SourceCode+PowerLine+AwesomeRegular`
 
 You can always run `p10k configure` to reconfigure the theme
 
