@@ -8,6 +8,5 @@
         <string>/Users/ryan/.dotfiles/autoBrewDump.sh</string>
         <key>StartInterval</key>
         <integer>7200</integer>
-        <true />
     </dict>
 </plist>

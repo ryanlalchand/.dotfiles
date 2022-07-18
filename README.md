@@ -31,6 +31,9 @@ ln -s ~/.dotfiles/brew.dump.plist ~/Library/LaunchAgents/brew.dump.plist
 
 # loads my script as a launch agent to schedule
 launchctl load ~/Library/LaunchAgents/local.restart.plist
+
+# check to see if it loaded
+launchctl list | grep brew.dump
 ```
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
